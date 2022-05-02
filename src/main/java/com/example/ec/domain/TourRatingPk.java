@@ -7,6 +7,7 @@ import java.io.Serializable;
 
 /**
  * Tour Rating Primary Key containing a Tour and a Customer Identifier
+
  * Created by Mary Ellen Bowman
  */
 @Embeddable
