@@ -13,7 +13,9 @@ import java.util.NoSuchElementException;
 import java.util.stream.Collectors;
 
 
-
+/**
+ * Created by Mary Ellen Bowman
+ */
 @RestController
 @RequestMapping(path = "/ratings")
 public class RatingController {

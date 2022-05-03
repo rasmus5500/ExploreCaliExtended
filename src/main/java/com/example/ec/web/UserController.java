@@ -18,6 +18,6 @@ public class UserController {
 
     @PostMapping("/signin")
     public Authentication login(@RequestBody @Valid LoginDto loginDto) {
-        return userService.signin(loginDto.getUsername(), loginDto.getPassword()) ;
+       return userService.signin(loginDto.getUsername(), loginDto.getPassword()) ;
     }
 }

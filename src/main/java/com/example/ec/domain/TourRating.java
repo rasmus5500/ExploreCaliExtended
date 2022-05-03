@@ -77,6 +77,10 @@ public class TourRating {
         }
     }
 
+    public Integer getId() {
+        return id;
+    }
+
     public Integer getScore() {
         return score;
     }
@@ -124,9 +128,5 @@ public class TourRating {
     @Override
     public int hashCode() {
         return Objects.hash(id, tour, customerId, score, comment);
-    }
-
-    public Integer getId() {
-        return id;
     }
 }

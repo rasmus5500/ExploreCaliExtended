@@ -18,14 +18,13 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.test.context.junit4.SpringRunner;
 import org.springframework.web.client.RestClientException;
 
-import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 import java.util.Optional;
 
-import static org.hamcrest.CoreMatchers.containsString;
 import static org.hamcrest.CoreMatchers.is;
 import static org.hamcrest.MatcherAssert.assertThat;
+import static org.hamcrest.core.StringContains.containsString;
 import static org.mockito.Mockito.when;
 import static org.springframework.boot.test.context.SpringBootTest.WebEnvironment.RANDOM_PORT;
 
@@ -74,12 +73,10 @@ public class RatingControllerTest {
      */
     @Test
     public void getRatings() {
-        when(tourRatingServiceMock.lookupAll())
-                .thenReturn(
-                        Arrays.asList(tourRatingMock, tourRatingMock, tourRatingMock));
+        when(tourRatingServiceMock.lookupAll()).thenReturn(Arrays.asList(tourRatingMock, tourRatingMock, tourRatingMock));
 
-        ResponseEntity<List> response = restTemplate
-                .getForEntity(RATINGS_URL, List.class);
+        ResponseEntity<List<RatingDto>> response = restTemplate.exchange(RATINGS_URL, HttpMethod.GET,null,
+                                                    new ParameterizedTypeReference<List<RatingDto>>() {});
 
         assertThat(response.getStatusCode(), is(HttpStatus.OK));
         assertThat(response.getBody().size(), is(3));
@@ -91,11 +88,10 @@ public class RatingControllerTest {
     @Test
     public void getOne()  {
 
-        when(tourRatingServiceMock.lookupRatingById(RATING_ID))
-                .thenReturn(Optional.of(tourRatingMock));
+        when(tourRatingServiceMock.lookupRatingById(RATING_ID)).thenReturn(Optional.of(tourRatingMock));
 
-        ResponseEntity<RatingDto> response = restTemplate
-                .getForEntity(RATINGS_URL + "/" + RATING_ID, RatingDto.class);
+        ResponseEntity<RatingDto> response =
+                restTemplate.getForEntity(RATINGS_URL + "/" + RATING_ID, RatingDto.class);
 
         assertThat(response.getStatusCode(), is(HttpStatus.OK));
         assertThat(response.getBody().getCustomerId(), is(CUSTOMER_ID));

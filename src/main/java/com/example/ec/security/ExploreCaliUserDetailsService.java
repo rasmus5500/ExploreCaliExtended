@@ -3,7 +3,6 @@ package com.example.ec.security;
 import com.example.ec.domain.User;
 import com.example.ec.repo.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
@@ -29,7 +28,7 @@ public class ExploreCaliUserDetailsService implements UserDetailsService {
         //org.springframework.security.core.userdetails.User.withUsername() builder
         return withUsername(user.getUsername())
                 .password(user.getPassword())
-                .authorities((GrantedAuthority) user.getRoles())
+                .authorities(user.getRoles())
                 .accountExpired(false)
                 .accountLocked(false)
                 .credentialsExpired(false)
