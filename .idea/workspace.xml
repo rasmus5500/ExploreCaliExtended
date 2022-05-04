@@ -5,21 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6feca70a-bab0-4c10-8b78-eca12e0dff6f" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/ec/security/JwtProvider.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/ec/security/JwtTokenFilter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/ec/web/ExceptionHandlerController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/example/ec/service/UserServiceIntegrationTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/example/ec/web/JwtRequestHelper.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/ec/security/ExploreCaliUserDetailsService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/ec/security/ExploreCaliUserDetailsService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/ec/security/WebSecurityConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/ec/security/WebSecurityConfiguration.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/ec/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/ec/service/UserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/ec/web/LoginDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/ec/web/LoginDto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/ec/web/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/ec/web/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/example/ec/web/TourRatingControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/example/ec/web/TourRatingControllerTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/example/ec/web/UserControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/example/ec/web/UserControllerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/data.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/logback.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/schema.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/data.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/schema.sql" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -82,8 +76,17 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_package_manager_path" value="npm" />
   </component>
-  <component name="RunManager" selected="JUnit.UserControllerTest">
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\rasmu\OneDrive\Datamatiker\4 semester\Java microservices 4 sem\Solutions\Explore California Extended Github\ExploreCaliExtended\src\main" />
+      <recent name="C:\Users\rasmu\OneDrive\Datamatiker\4 semester\Java microservices 4 sem\Solutions\Explore California Extended Github\ExploreCaliExtended\src\main\java\com\example\ec" />
+      <recent name="C:\Users\rasmu\OneDrive\Datamatiker\4 semester\Java microservices 4 sem\Solutions\Explore California Extended Github\ExploreCaliExtended\src\main\resources" />
+      <recent name="C:\Users\rasmu\OneDrive\Datamatiker\4 semester\Java microservices 4 sem\Solutions\Explore California Extended Github\ExploreCaliExtended\src\main\resources\db\migration" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Spring Boot.ExplorecaliApplication">
     <configuration name="TourRatingControllerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="explorecali" />
       <extension name="coverage">
@@ -187,6 +190,8 @@
       <option name="presentableId" value="Default" />
       <updated>1651591332726</updated>
       <workItem from="1651591333909" duration="4585000" />
+      <workItem from="1651596224240" duration="320000" />
+      <workItem from="1651652248189" duration="2843000" />
     </task>
     <servers />
   </component>
